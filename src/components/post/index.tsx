@@ -63,6 +63,7 @@ const Post = ({ user, title, post, createdAt, avatar }: propsInterface) => {
   }
   return (
     <div className={classes.rootContainer}>
+      {/* Post header */}
       <div className={classes.header}>
         <div
           style={{
@@ -75,12 +76,16 @@ const Post = ({ user, title, post, createdAt, avatar }: propsInterface) => {
         </div>
         <div className={classes.createdAt}>{createdAt}</div>
       </div>
+
+      {/* Post body */}
       <div className={classes.body}>
         <span className={classes.title}>{title}</span>
         <br />
 
         {post}
       </div>
+
+      {/* Action Container */}
       <div className={classes.actionContainer}>
         <div onClick={handleLike}>
           {isLiked ? (
@@ -115,6 +120,8 @@ const Post = ({ user, title, post, createdAt, avatar }: propsInterface) => {
           btnName='Send'
         />
       </div>
+
+      {/* Add comment section */}
       <div>
         <form
           className={classes.addCommentContainer}
