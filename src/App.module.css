@@ -1,8 +1,8 @@
 .container {
-  height: 100%;
-  display: grid;
-  place-content: center;
-  font-size: 4rem;
-  font-weight: bold;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Railwey', sans-serif;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding-top: 2vh; */
 }
